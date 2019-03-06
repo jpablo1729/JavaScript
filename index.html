@@ -6,8 +6,9 @@
         </title>
     </head>
     <body>
-        <!-- 1. The tag for JS -->
+        <!-- The tag for JS -->
         <script>
+            //Variables
             let string = "This is a string",
                 number = 42,
                 boolean = true;
@@ -27,7 +28,17 @@
             // array[index] = indexElement -with index
             //object.keyname or object["key-name"]   
         </script>
-        <!-- 2. Create a file for your script -->   
+        <!-- Create a file for your script -->   
         <script src="./myscript.js"></script>
+        <!-- Functions -->
+        <script>
+           function myFirstFunction(myString1, myString2 = 0) {//With zero set a default value :)
+                console.log(myString1);
+                console.log(myString2);
+           };
+           myFirstFunction("Esto es una salida a consola :)"); //Invoque the function
+           myFirstFunction("Esto es una salida a consola :)", "123"); //Invoque the function
+           myFirstFunction(123); //Invoque the function
+        </script>
     </body>
 </html>
